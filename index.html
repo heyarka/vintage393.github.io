@@ -16,13 +16,84 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="navbar-brand">THE DAILY CHRONICLE</div>
+          <ul class="navbar-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#society">SOCIETY</a></li>
+            <li><a href="#business">BUSINESS</a></li>
+            <li><a href="#culture">CULTURE</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <main>
+        <section id="home" class="hero-section">
+          <div class="vintage-card">
+            <div class="vintage-border">
+              <h1 class="vintage-header">WELCOME TO THE TWENTIES</h1>
+              <div class="art-deco-divider"></div>
+              <p class="vintage-subheader">The Era of Prosperity &amp; Innovation</p>
+              
+              <p class="hero-text">
+                Step back in time to an age of elegance, jazz music, and cultural revolution. 
+                The 1920s brought unprecedented economic prosperity and social change to America.
+              </p>
+              
+              <button class="vintage-button" id="readMoreBtn">READ MORE</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="articles-section">
+          <h2 class="section-title">LATEST HEADLINES</h2>
+          <div class="art-deco-divider"></div>
+          
+          <div class="article-grid">
+            <article class="article-card">
+              <h3>PROHIBITION TAKES EFFECT</h3>
+              <div class="article-meta">January 17, 1920</div>
+              <p>The Eighteenth Amendment's ban on the sale of alcohol has begun nationwide, ushering in the Prohibition era.</p>
+              <a href="#" class="article-link">Continue Reading</a>
+            </article>
+            
+            <article class="article-card">
+              <h3>WOMEN GAIN RIGHT TO VOTE</h3>
+              <div class="article-meta">August 26, 1920</div>
+              <p>The 19th Amendment to the Constitution has been ratified, ensuring women's suffrage across the nation.</p>
+              <a href="#" class="article-link">Continue Reading</a>
+            </article>
+            
+            <article class="article-card">
+              <h3>JAZZ AGE IN FULL SWING</h3>
+              <div class="article-meta">March 15, 1923</div>
+              <p>Music halls and speakeasies across the nation report record attendance as jazz music captivates the youth.</p>
+              <a href="#" class="article-link">Continue Reading</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <p class="footer-title">THE DAILY CHRONICLE</p>
+          <div class="art-deco-divider"></div>
+          <p class="copyright">
+            Copyright © 1923 | All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
